@@ -199,7 +199,7 @@ namespace Movies_2020
                 newData.Parameters.AddWithValue("@Rental_cost", txtRental_cost.Text);
                 newData.Parameters.AddWithValue("@Date", txtDate.Text);
 
-                Connection.Open();//open the connection to the database
+                Connection.Open();// open the connection to the database
                 //it's a nonquery
                 newData.ExecuteNonQuery();
                 Connection.Close();//Close the connection
